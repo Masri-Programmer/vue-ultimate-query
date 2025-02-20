@@ -1,6 +1,6 @@
 {
   "name": "vue-ultimate-query",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.js",
   "module": "index.js",
   "repository": {
@@ -8,9 +8,7 @@
     "url": "git+https://github.com/Masri-Programmer/vue-ultimate-query.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build",
-    "publish": "npm publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "vue3",
