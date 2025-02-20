@@ -7,13 +7,13 @@ A Vue 3 API utility using Vue Query, VueUse, and Axios. Simplify API interaction
 Install the package via npm:
 
 ```bash
-npm install @vue-ultimate-query
+npm install vue-ultimate-query
 ```
 
 ## Usage
 ## Basic Example
 ```js
-import { apiQuery } from "@vue-ultimate-query";
+import { apiQuery } from "vue-ultimate-query";
 
 
 const { data, error, isLoading, refetch } = apiQuery("products").useGet();

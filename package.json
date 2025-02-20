@@ -1,12 +1,11 @@
 {
   "name": "vue-ultimate-query",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "main": "index.js",
   "module": "index.js",
-  "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Masri-Programmer/vue-ultimate-query"
+    "url": "git+https://github.com/Masri-Programmer/vue-ultimate-query.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +20,7 @@
     "vue-use"
   ],
   "author": "masri-programmer",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "description": "A Vue 3 API utility with Vue Query and Axios",
   "dependencies": {
