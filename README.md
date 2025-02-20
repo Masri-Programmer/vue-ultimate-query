@@ -53,7 +53,32 @@ The package uses vue-toastification for displaying success and error messages. Y
 You can modify the global configuration and set default values as needed.
 
 ```js
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+import axios from "axios";
+import { setAxiosInstance } from "vue-ultimate-query";
+import { useStorage, useSessionStorage } from "@vueuse/core";
+import { BASE_URL } from "@/shared/constants.js";
+
+const userStorage = useStorage("user", {});
+const userSessionStorage = useSessionStorage("user", {});
+
+// Create a new Axios instance
+const customAxios = axios.create({
+  baseURL: BASE_URL,
+  headers: { "Content-Type": "application/json" },
+});
+
+// Add authorization token dynamically
+customAxios.interceptors.request.use((config) => {
+  config.headers.Authorization = `Bearer ${
+    userSessionStorage.value.token || userStorage.value.token || ""
+  }`;
+  return config;
+});
+
+// Pass custom Axios to the package
+setAxiosInstance(customAxios);
+
+
 ```
 
 ## License
