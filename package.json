@@ -1,0 +1,19 @@
+{
+  "name": "vue-ultimate-query",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vue-api-utility.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "masri-programmer",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "A Vue 3 API utility with Vue Query and Axios"
+}
