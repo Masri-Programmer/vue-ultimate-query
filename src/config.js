@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n';
-import de from './locales/de/index'
-import en from './locales/en/index'
+import de from './locales/de'
+import en from './locales/en'
 
 export const createI18nInstance = (createI18n, savedLocale = localStorage.getItem('lang') || 'de', messages) => {
     return createI18n({
